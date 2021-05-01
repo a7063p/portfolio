@@ -28,6 +28,7 @@ function Portfolio() {
     <div>
       {renderPage()}
     </div>
+   
     </div>
   );
 }

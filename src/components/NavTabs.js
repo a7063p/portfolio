@@ -5,9 +5,7 @@ function NavTabs(props) {
   const tabs = ['About Me', 'Portfolio', 'Contact', 'Resume'];
     return (
     <div className='header' style={{backgroundImage: `url(${Hero})`}}> 
-    <h1 className='head-name'>Andrew Pennucci</h1>
-
-    <ul className="nav">    
+      <ul className="nav">    
     
       {tabs.map(tab => (
         <li className="nav-item" key={tab}>          
@@ -23,6 +21,7 @@ function NavTabs(props) {
         </li>
       ))}
     </ul>
+    <h1 className='head-name'>Andrew Pennucci</h1>
     </div>
   );
 }

@@ -1,12 +1,15 @@
 import React from "react";
-import Picture from '../../assets/images/about/picture.JPG'
+import { FaUserCircle } from "react-icons/fa";
 
 const About = () => (
   <div>
     <h1>About Me</h1>
-    <div className='circle-div'>
-    <img src={Picture} className="circle"  alt="Andrew Pennucci Profile" />
-    </div>
+    <div className='circle-div'>      
+  <FaUserCircle
+  className='user-circle'
+  size={56}
+  />
+  </div>
     <p>    
       Nunc pharetra finibus est at efficitur. Praesent sed congue diam. Integer gravida dui mauris,
       ut interdum nunc egestas sed. Aenean sed mollis diam. Nunc aliquet risus ac finibus porta. Nam
