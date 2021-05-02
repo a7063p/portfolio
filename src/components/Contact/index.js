@@ -8,10 +8,11 @@ function Contact() {
   const { name, email, message } = formState;
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    //  e.preventDefault();
     if (!errorMessage) {
       console.log('Submit Form', formState);
-    }
+    } 
+      
   };
 
   const handleChange = (e) => {
@@ -33,8 +34,7 @@ function Contact() {
       setFormState({ ...formState, [e.target.name]: e.target.value });
       console.log('Handle Form', formState);
     }
-  };
-  
+  };  
 
   return (
     <section>
@@ -61,6 +61,7 @@ function Contact() {
       </form>
     </section>
   );
+  
 }
 
 export default Contact;

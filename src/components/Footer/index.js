@@ -7,9 +7,9 @@ function FooterTemp() {
     return (
         <div >
             <div className='foot'>
-                <a href={'https://github.com/a7063p/'}>
+                <a href={'https://github.com/a7063p/'} >
                 <FaGithub
-                 className='footer-icon'                 
+                className='footer-icon' 
                  size={30}
                  cursor='pointer'/>
                  
@@ -24,6 +24,7 @@ function FooterTemp() {
                 className='footer-icon'
                 size={30}/>
                 </a>
+             
               
                 
             </div>
