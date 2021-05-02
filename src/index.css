@@ -16,6 +16,7 @@
 
 .head-name {  
   margin-top: 80px;
+  margin-left: 20px;
   width: fit-content;
   color:#ffffff;
   font-size: 3rem;
@@ -36,19 +37,6 @@
   
   display: flex; 
   justify-content: flex-end;
-}
-.circle {
-  padding-left:5px;
-  height:75px;
-  width:auto;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;    
-}
-.circle-div {
-  margin-left: 20px;
-  padding: 5px;
 }
 
 a {
@@ -109,6 +97,16 @@ background-color:rgb(133,137,142)
 .user-circle {
   color: rgb(25,44,59);  
 }
+.git-circle{
+  color: rgb(252,252,253);
+  position: absolute;
+  top:3%;
+  left: 80%;
+}
+.git-circle:hover {  
+  color: rgb(138,54,57);
+    
+}
 
 .circle-div {
   margin-left: 20px;
@@ -141,14 +139,50 @@ footer {
   border-bottom: 2px solid rgb(133,137,142);   
 }
 
+.overlay {
+  display: none;
+}
+
+.outer:hover .overlay {
+  display: block;
+  position: absolute;
+  width: 93%;
+  height: 500px;
+  background: rgb(25,44,59);
+  opacity: 0.8;
+  top: 0
+}
+
+.text {
+  position: absolute;  
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  color: white;
+}
+.text-description {
+  position: absolute;
+  top:5%;
+  left: 5%;
+  color: rgb(252,252,253);
+  font-weight: bold;
+}
+.text:hover, .text-description:hover {
+ color:rgb(138,54,57)
+}
+
 .portfolio-image {
-  margin-bottom: 40px;
-  max-width:100%;
+  margin-bottom: 60px;
+  max-width:500px;
   height:500px;
 }
 
 .port-div {
-  margin: 25px;  
+  margin: 25px 40px 25px 18%;  
+}
+
+.port-list{
+  list-style-type: none;
 }
 
 #contact-form {
