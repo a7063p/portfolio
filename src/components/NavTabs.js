@@ -4,11 +4,11 @@ import Hero from '../assets/images/header/hero.JPG'
 function NavTabs(props) {
   const tabs = ['About Me', 'Portfolio', 'Contact', 'Resume'];
     return (
-    <div className='header' style={{backgroundImage: `url(${Hero})`}}> 
+    <div className='header' style={{backgroundImage: `url(${Hero})`, }}> 
       <ul className="nav">    
     
       {tabs.map(tab => (
-        <li className="nav-item" key={tab}>          
+        <li  className="nav-item" key={tab}>          
           <a
             href={'#' + tab.toLowerCase()}
             onClick={() => props.handlePageChange(tab)}

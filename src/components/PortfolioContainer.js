@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
-import Home from './pages/Home';
+import Resume from './Resume';
 import About from './About';
-import Blog from './pages/Blog';
+import Blog from './Portfolio';
 import Contact from './Contact';
 
 function Portfolio() {
@@ -18,7 +18,7 @@ function Portfolio() {
       case 'Contact':
         return <Contact />;
       case 'Resume':
-        return <Home />
+        return <Resume />
     }
   };
 

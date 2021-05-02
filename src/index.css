@@ -5,18 +5,18 @@
   background-size: cover; 
   background-position: center; 
   filter: grayscale(55%);
+  /* background: linear-gradient(90deg, rgba(0,130,170,0),35%)  */
+ 
     
 }
-/* .container {
-  display: flex;
-} */
+
 .head-name {  
-  margin-top: 50px;
+  margin-top: 80px;
   width: fit-content;
   color:#ffffff;
   font-size: 3rem;
   font-weight: bold;
-  filter: grayscale(20%);
+  /*  */
   text-shadow: 1px 1px #2d2e2d, 2px 2px #252525, 3px 3px #1c1d1c;
 }
 
@@ -27,6 +27,7 @@
   font-weight: bold;
   text-shadow: 1px 1px #2d2e2d, 2px 2px #252525, 3px 3px #1c1d1c;
 }
+
 
 .nav{
   
@@ -49,11 +50,16 @@
 
 a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
+}
+a:hover{
+  color: rgb(133,137,142);  
+}
+a:focus{
+  color: rgb(22, 78, 121);  
 }
 body {
-  background-color:rgb(252,252,253);
-  
+  background-color:rgb(252,252,253);  
 }
 
 .form {
@@ -66,9 +72,11 @@ input, textarea {
   border-color: rgb(25,44,59);
 }
 label {
+  margin-top: 5px;
   font-weight: bold;
-  width: 100%;
-  padding-bottom: 5px;
+  width: 200px;
+  padding-bottom: 2px;
+  color: rgb(25,44,59);
 }
 
 h1, p {
@@ -77,10 +85,17 @@ h1, p {
 }
 
 .btn {
-background-color:rgb(197,3,0);
-border:rgb(0,72,113);
-color: rgb(0,72,113);
-font-weight: bold;
+background-color:rgb(25,44,59);
+border:rgb(25,44,59);
+color: rgb(252,252,253);
+}
+
+.btn:hover {
+  background-color:rgb(138,54,57);
+  color: rgb(25,44,59)
+}
+.btn:active {
+background-color:rgb(133,137,142)
 }
 .error-text{
   font-weight: bold;
@@ -96,7 +111,7 @@ font-weight: bold;
 }
 
 footer {
-  position:absolute;
+  position:fixed;
   bottom:0;
   width:100%;
   background-size: cover;   
@@ -115,15 +130,21 @@ footer {
   margin: 15px; 
 }
 
-.footer-icon:hover {  
-  border-bottom: 1px solid rgb(252,252,253);
-  border-spacing: 5px;
-  padding: 5px;
+.portfolio-image {
+  margin: 20px;
+  max-width:100%;
+  height:500px;
 }
-.footer-icon:active {
- border-bottom:2px solid gray;  
-  color: gray; 
+
+.port-div {
+  margin: 20px;
+  filter: grayscale(20%);
 }
+
+#contact-form {
+  margin-left: 20px;
+}
+
 
   
 
