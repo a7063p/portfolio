@@ -19,7 +19,7 @@ function FooterTemp() {
                 className='footer-icon'
                 size={30}/>
                 </a> 
-                 <a href={'https://https://stackoverflow.com/'}>
+                 <a href={'https://stackoverflow.com/'}>
                 <FaStackOverflow
                 className='footer-icon'
                 size={30}/>
