@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8bdc5909.chunk.css",
+    "main.js": "/portfolio/static/js/main.1e8e1961.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.1e8e1961.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
+    "static/js/2.cd955ee4.chunk.js": "/portfolio/static/js/2.cd955ee4.chunk.js",
+    "static/js/2.cd955ee4.chunk.js.map": "/portfolio/static/js/2.cd955ee4.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.8bdc5909.chunk.css.map": "/portfolio/static/css/main.8bdc5909.chunk.css.map",
+    "static/js/2.cd955ee4.chunk.js.LICENSE.txt": "/portfolio/static/js/2.cd955ee4.chunk.js.LICENSE.txt",
+    "static/media/andrew-pennucci.79f77d6c.pdf": "/portfolio/static/media/andrew-pennucci.79f77d6c.pdf",
+    "static/media/budget-tracker.f8958718.JPG": "/portfolio/static/media/budget-tracker.f8958718.JPG",
+    "static/media/fitness-flow.ba4ba054.JPG": "/portfolio/static/media/fitness-flow.ba4ba054.JPG",
+    "static/media/index.css": "/portfolio/static/media/footer.d4ff1665.JPG",
+    "static/media/hero.970d3ae3.JPG": "/portfolio/static/media/hero.970d3ae3.JPG",
+    "static/media/note-taker.2ada45ce.JPG": "/portfolio/static/media/note-taker.2ada45ce.JPG",
+    "static/media/readme.c981df64.JPG": "/portfolio/static/media/readme.c981df64.JPG",
+    "static/media/run-buddy.8ef3cabe.JPG": "/portfolio/static/media/run-buddy.8ef3cabe.JPG",
+    "static/media/sayings-from-someone.aa2ed855.JPG": "/portfolio/static/media/sayings-from-someone.aa2ed855.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76232b81.js",
+    "static/js/2.cd955ee4.chunk.js",
+    "static/css/main.8bdc5909.chunk.css",
+    "static/js/main.1e8e1961.chunk.js"
+  ]
+}
