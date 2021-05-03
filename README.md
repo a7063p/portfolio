@@ -36,7 +36,7 @@ This is a react portfolio generator to show case your application and projects a
    
  
 
-  ## License
+  ## License  
   ![license](https://img.shields.io/badge/license-MIT-critical)
   
   This application currently is licensed with MIT. 
