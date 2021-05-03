@@ -4,7 +4,7 @@
   ## Description
 This is a react portfolio generator to show case your application and projects as well as provide a point of access for your resume
     
-     
+  * Link for deployed application [Deploy](https://a7063p.github.io/portfolio/#about%20me)   
   * Link for GitHub Repository [GitHub](https://github.com/a7063p/portfolio.git)  
 
 
@@ -19,10 +19,14 @@ This is a react portfolio generator to show case your application and projects a
   
 
   ## Installation
+
+  This application is deployed through git hub, click on the deploy link to access.
   
     
     
   ## Usage
+This application is is a personal portfolio that has links to GitHub repos and deployed sites in the portfolio.  
+
   
       
 
