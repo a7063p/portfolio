@@ -29,7 +29,7 @@ This application is is a personal portfolio that has links to GitHub repos and d
 
   
       
-  ![image](./src/assets/image/portfolio.PNG)
+  
   ![image](.\src\assets\images\portfolio.PNG)  
   
   ## Languages  
