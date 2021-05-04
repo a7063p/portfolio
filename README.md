@@ -30,7 +30,7 @@ This application is is a personal portfolio that has links to GitHub repos and d
   
       
   
-  ![image](.\src\assets\images\portfolio.PNG)  
+ ![image](.src/assets/image/portfolio.PNG)   
   
   ## Languages  
   ![language](https://img.shields.io/badge/JavaScript-critical)  
