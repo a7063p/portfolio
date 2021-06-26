@@ -53,7 +53,7 @@ function Feature() {
               <Card.Body>
                 <Card.Title>Professional Reporting</Card.Title>
                 <Card.Text>
-                Produce standardized, legible and professional breaching reports.
+                Produce standardized, legible and professional breaching reports. Match your agencies logo with customizable reports
                 </Card.Text>
               </Card.Body>
             <ReportModal/>
