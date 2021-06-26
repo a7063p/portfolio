@@ -1,67 +1,101 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import { Card, Button, Container, Form, Alert } from 'react-bootstrap'
+import BXF from '../../assets/images/header/icon.jpg'
 
-function Contact() {
+const ContactForm = () => {
+  const [status, setStatus] = useState("Submit");
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
 
-  const handleSubmit = (e) => {
-    //  e.preventDefault();
-    if (!errorMessage) {
-      console.log('Submit Form', formState);
-    } 
-      
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    console.log("details", details)
+    let response = await fetch("http://localhost:5000/contact", {
+
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+
+    });
+    setStatus("Submit");
+    setFormState({ ...formState });
+    console.log('form state', setFormState)
+
+    let result = await response.json();
+
+    alert(result.status);
   };
 
+
+
+
   const handleChange = (e) => {
-    if (e.target.name === 'email') {
+    console.log("target is good",)
+    if (e.target.id === 'email') {
       const isValid = validateEmail(e.target.value);
+      (console.log('valid', isValid))
       if (!isValid) {
         setErrorMessage('Your email is invalid.');
+       
       } else {
         setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage('');
+
       }
     }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
-    }
-  };  
+  };
+  
+
+
 
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact</h1>
-      <form className='form' id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label  htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div>
-          <label  htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
-          <label  htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <button className='btn' data-testid="button" type="submit">Submit</button>
-      </form>
-    </section>
-  );
-  
-}
+    <Container>
+      <Card>
+        <Card.Header className="contain-color">Contact Us</Card.Header>
+        <Card.Body>
 
-export default Contact;
+          <Form onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="name">Name:</label>
+              <input type="text" id="name" required value={name} />
+            </div>
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input type="email" id="email" required value={email} onBlur={handleChange} />
+            </div>
+            <div>
+              <label htmlFor="message">Message:</label>
+              <textarea id="message" rows="10" required value={message} />
+            </div>
+            {errorMessage && (
+              <div>
+                <p className="error-text">{errorMessage}</p>
+              </div>
+              
+            )}
+            <Button type="submit" variant="primary">{status} </Button>
+          </Form>
+
+        </Card.Body>
+      </Card>
+    </Container>
+
+  );
+};
+
+export default ContactForm;
+
+

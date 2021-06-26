@@ -1,37 +1,21 @@
-
-import { FaStackOverflow, FaGithub, FaLinkedin  } from "react-icons/fa";
-
 import React from 'react'
 
-function FooterTemp() {
+import { Container, Row, Col } from 'react-bootstrap'
+
+
+
+function Footer() {
     return (
-        <div >
-            <div className='foot'>
-                <a href={'https://github.com/a7063p/'} >
-                <FaGithub
-                className='footer-icon' 
-                 size={30}
-                 cursor='pointer'/>
-                 
-                 </a>
-                 <a href={'https://linkedin.com/in/andrew-pennucci-23ab5815a'}>
-                <FaLinkedin
-                className='footer-icon'
-                size={30}/>
-                </a> 
-                 <a href={'https://stackoverflow.com/'}>
-                <FaStackOverflow
-                className='footer-icon'
-                size={30}/>
-                </a>
-             
-              
-                
-            </div>
-            
-          
-        </div>
+        <>
+            <Container className="foot">
+                <Row>
+                    <Col><a href='https://www.breacherxfiles.com'>www.breacherXfiles.com</a></Col>
+                    <Col xs={6}>{'\u00A9'} 2021 Breacher X Files </Col>
+                    <Col><a target='_blank' rel="noreferrer" href='https://www.globalassetsintegrated.com/'>A Division Of {'\u00A9'} 2021 Global Assets Integrated</a></Col>
+                </Row>
+            </Container>
+        </>
     )
 }
 
-export default FooterTemp
+export default Footer

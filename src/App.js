@@ -1,16 +1,14 @@
 import React from "react";
-import Footer from "./components/Footer";
-import PortfolioContainer from "./components/PortfolioContainer";
+import BxfContainer from "./components/BxfContainer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 const App = () => {
 
 return (
 <div>
-<PortfolioContainer />
-<footer>
-   <Footer/>
-</footer>
+<BxfContainer />
 </div>
 
 )
